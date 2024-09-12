@@ -1,0 +1,84 @@
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #61dafb;
+  font-size: 3em;
+}
+
+.question {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.options {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  color: #fff;
+}
+
+#game,
+#score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#score {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  background-color: #3a3f47;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#finalScore {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #61dafb;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}

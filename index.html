@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Perguntas: Dispositivos de Entrada e Saída</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Jogo: Dispositivos de Entrada e Saída</h1>
+    <div id="game">
+      <div class="question" id="question"></div>
+      <div class="options" id="options"></div>
+      <button onclick="nextQuestion()" id="nextBtn">Próxima Pergunta</button>
+    </div>
+
+    <div id="score" style="display: none">
+      <h2 id="resultTitle"></h2>
+      <p id="scoreMessage"></p>
+      <h3 id="wrongTitle" style="display: none">
+        Você errou as seguintes perguntas:
+      </h3>
+      <ul id="wrongAnswersList"></ul>
+      <button onclick="restartGame()">Recomeçar</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
